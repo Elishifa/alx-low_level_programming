@@ -3,7 +3,7 @@
 
 /**
  * main - entry point
- * program that prints the numbers from 1 to 100
+ * Description: program that prints the numbers from 1 to 100
  * Fizz for multiples of 3, buzz for multiples of 5
  * Return: always 0
  */
