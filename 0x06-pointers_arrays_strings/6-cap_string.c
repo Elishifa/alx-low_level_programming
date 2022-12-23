@@ -1,4 +1,4 @@
-rinclude "main.h"
+#include "main.h"
 
 /**
  * cap_string - capitalizes all words of a string
@@ -21,7 +21,7 @@ char *cap_string(char *str)
 			{
 				for (p = 0; p <= 12; p++)
 				{
-					if (a[j] == *(str + m - 1))
+					if (a[p] == *(str + m - 1))
 						*(str + m) -= 'a' - 'A';
 				}
 			}
