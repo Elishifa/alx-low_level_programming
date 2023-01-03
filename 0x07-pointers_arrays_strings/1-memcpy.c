@@ -5,17 +5,17 @@
  * @n: bytes
  * @src: the source
  * @dest: memory area destination
- * Returns: a pointer to @dest
+ * Return: a pointer to @dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i = 0;
+	unsigned int m = 0;
 
-	while (i < n)
+	while (m < n)
 	{
-		dest[i] = src[i];
-		i++;
+		dest[m] = src[m];
+		m++;
 	}
 	return (dest);
 }
