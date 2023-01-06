@@ -10,8 +10,8 @@ void _puts_recursion(char *str)
 {
 	if (*str)
 	{
-		-putchar(*str);
-		_recursion(str + 1);
+		_putchar(*str);
+		_puts_recursion(str + 1);
 	}
 
 	else
