@@ -1,4 +1,4 @@
-iinclude <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -10,8 +10,7 @@ iinclude <stdio.h>
 
 int main(int argc, char *argv[])
 {
-	int a, b;
-	sum = 0;
+	int a, b, sum = 0;
 	char *flag;
 
 	if (argc < 2)
@@ -21,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 	for (a = 1; argv[a]; a++)
 	{
-		n = strtol(argv[a], &flag, 10);
+		b = strtol(argv[a], &flag, 10);
 		if (*flag)
 		{
 			printf("Error\n");
