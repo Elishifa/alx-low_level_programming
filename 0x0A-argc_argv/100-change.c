@@ -19,15 +19,15 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	total = strtol(argv[1], &p, 10);
+	total = strtol(argv[1], &c, 10);
 	count = 0;
 	if (!*c)
 	{
 		while (total > 1)
 		{
-			for (n = 0; n < sizeof(cents[n]); n++)
+			for (n = 0; n < sizeof(coins[n]); n++)
 			{
-				if (total >= cents[n])
+				if (total >= coins[n])
 				{
 					count += total / coins[n];
 					total = total % coins[n];
