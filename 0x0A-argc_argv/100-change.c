@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
 	unsigned int n;
 	char *c;
 	int coins[] = {25, 10, 5, 2};
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -35,7 +36,9 @@ int main(int argc, char *argv[])
 		if (total == 1)
 			count++;
 	}
-	else{printf("Error\n");
+	else
+	{
+		printf("Error\n");
 		return (1);
 	}
 	printf("%d\n", count);
