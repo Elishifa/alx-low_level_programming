@@ -1,17 +1,16 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
-#include <stdio.h>
 
 /**
  * print_all - printing anything
  * @format: types of arg passed to function
- * Return: void
+ * Return: nothing
  */
 
 void print_all(const char * const format, ...)
 {
 	va_list list;
-	unsigned int m = 0, q , p = 0;
+	unsigned int m = 0, q, p = 0;
 	char *str;
 	const char t_arg[] = "cifs";
 
@@ -33,7 +32,7 @@ void print_all(const char * const format, ...)
 				printf("%c", va_arg(list, int)), p = 1;
 				break;
 			case 'i':
-				printf("%x", va_arg(list, int)), p = 1;
+				printf("%d", va_arg(list, int)), p = 1;
 				break;
 			case 'f':
 				printf("%f", va_arg(list, double)), p = 1;
