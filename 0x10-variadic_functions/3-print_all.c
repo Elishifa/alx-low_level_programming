@@ -1,5 +1,6 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
+#include <stdio.h>
 
 /**
  * print_all - printing anything
@@ -10,21 +11,21 @@
 void print_all(const char * const format, ...)
 {
 	va_list list;
-	unsigned int m = 0, n = 0, p = 0;
+	unsigned int m = 0, q = 0, p = 0;
 	char *str;
 	const char t_arg[] = "cifs";
 
 	va_start(list, format);
 	while (format && format[m])
 	{
-		n = 0;
-		while (t_arg[n])
+		q = 0;
+		while (t_arg[q])
 		{
-			if (format[m] == t_arg[n] && p)
+			if (format[m] == t_arg[q] && p)
 			{
 				printf(", ");
 				break;
-			} n++;
+			} q++;
 		}
 		switch (format[m])
 		{
@@ -46,8 +47,7 @@ void print_all(const char * const format, ...)
 				}
 				printf("%s", str);
 				break;
-		} n++;
+		} q++;
 	}
 	printf("\n"), va_end(list);
 }
-
