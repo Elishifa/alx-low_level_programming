@@ -13,7 +13,17 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int n;
-	uns int p;
+	int p = 0;
+	unsigned int j = 0;
 
+	if (!b)
+		return (0);
 
+	for ( ; b[p]; p++)
+	{
+		if (b[p] < '0' || b[p] > '1')
+			return (0);
+		j = 2 * j + (b[p] - '0');
+	}
+	return (j);
+}
