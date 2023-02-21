@@ -3,7 +3,7 @@
 /**
  * create_file - file creation
  * @filename: A pointer to created filename
- * @text_content: pointer to str 
+ * @text_content: pointer to str
  * Return: If the function fails - -1.
  *         Otherwise - 1.
  */
